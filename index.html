@@ -5,21 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a{
+            color: green;
+        }
+
+        div {
+           height: 100px; 
+           background: orange;
+           border: 1px solid #000;
+        }
+
+        .menu {
+            border: 1px solid #000;
+            list-style: none;
+            margin: 100px 0;
+        }
+
+        .menu li{
+            background: #000;
+        }
+
+        .menu a{
+            color:red;
+        }
+
+        .menu-link{
+            color: #fff !important;
+        }
+
+        .header{
+            background: #000 !important;
+            color: #fff !important;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .header-white {
+            color: #000 !important;
+            border: 1px solid #000;
+            background: #fff !important;
+        }
+
+        .article{}
+
+        .article-time  strong {
+            color: #fff;
+        }
+
+    
+        
+
+    </style>
 </head>
 <body>
-    <div style="width: 200px; height: 100px; background: red">
-        block <span style="width: 200px; background: green">inline text</span> <div>111</div>
+
+    <header class="header header-white">
+        site header
+    </header>
+
+    <div>
+        111
     </div>
 
     <div>
-        block
+        <strong>block</strong>
     </div>
 
     <div>
         <a href="http://google.com">google</a>
     </div>
+
+
+    <ul class="menu">
+        <li>
+            <a class="menu-link"
+            style="color:purple !important"
+            href="/">about</a>
+        </li>
+
+        <li>
+            <a class="menu-link" href="/">about</a>
+        </li>
+
+        <li>
+            <a class="menu-link" href="/">about</a>
+        </li>
+    </ul>
+
+    <div class="article">
+        <header>
+            <div class="article-time">
+                31 янв
+                <strong>19:00</strong>
+            </div>
+        </header>
+    </div>
+
     <ul>
-        <li>111</li>
+        <li><a href="/">ul 2</a></li>
     </ul>
 </body>
 </html>
